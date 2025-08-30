@@ -75,6 +75,57 @@ yt-dlp is a feature-rich command-line audio/video downloader with support for [t
 <!-- MANPAGE: END EXCLUDED SECTION -->
 
 
+# GETTING STARTED
+This is simplified tutorial of yt-dlp for newbies. Detailed instructions on [INSTALLATION](#installation) or [USAGE AND OPTIONS](usage-and-options) can be found in their own sections.
+
+## Installing
+To install yt-dlp, first download one of these binaries: [Windows](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe), [MacOS](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_macos), [Linux](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp).  
+After that create a folder, where your video and audio files will be installed. Move your downloaded binary to that folder.
+
+Open command prompt (search "cmd"). Navigate to your video/audio folder.  
+Navigation commands:
+* `cd Test` -> move to folder "Test". 
+* `cd ..` -> move to previous folder.
+* `cd e:` -> Change to drive "E:".
+
+Congratulations, you are officially ready for using yt-dlp! From now on, all commands start in Windows with `yt-dlp` and on Linux or MacOS with `./yt-dlp`.
+> [!TIP]
+> It's encouraged to update your yt-dlp every time before usage, to ensure always working downloads. To update, type `yt-dlp -U` (or `./yt-dlp -U`).
+
+## Downloading video/audio
+To download any video or audio, simply type `yt-dlp "<your-link>"` and replace \<your-link\> with your actual link. If you're on Linux or MacOS, type `./yt-dlp`.
+
+Examples: 
+* `yt-dlp "https://youtu.be/dQw4w9WgXcQ"`
+* `./yt-dlp "https://youtu.be/dQw4w9WgXcQ"`
+
+After that, yt-dlp downloads the video/audio to the same folder, where it's also located.
+
+<details>
+<summary>How to download part of the video/audio?</summary>
+   
+<code>yt-dlp "your-link" --download-sections "*start-end"</code> and replace "start" with starting second and "end" with last second of original video/audio you want.
+
+If you want certain chapter, run <code>yt-dlp "your-link"--download-sections "example"</code> and replace example with the real chapter name.
+
+Examples:
+* `yt-dlp "https://youtu.be/dQw4w9WgXcQ" --download-sections "*93-111"`
+* `yt-dlp "https://youtu.be/dQw4w9WgXcQ" --download-sections "tutorial"`
+
+</details>
+
+## Video/audio quality options
+
+Here will be stuff.
+
+## Subtitle settings
+
+Also here.
+
+## Playlists
+
+And here...
+
 # INSTALLATION
 
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
